@@ -1,0 +1,23 @@
+.footer-container {
+  background-color: #93BBFF;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-container a {
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff; /* Altere conforme necessário */
+  text-decoration: none;
+}
+
+.whatsapp-link .whatsapp-icon,
+.email-link .email-icon,
+.github-link .github-icon {
+  margin-right: 5px;
+}
+
+.rights-container {
+  margin-top: 20px;
+  color: #fff; /* Altere conforme necessário */
+}

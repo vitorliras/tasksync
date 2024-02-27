@@ -1,0 +1,106 @@
+<div class="form-container">
+  <form class="activity-form">
+    <h2>Criar Título</h2>
+      <div class="form-group">
+          <label for="title">Título:</label>
+          <input
+          type="text"
+          class="input"
+          name="title"
+          id="title"
+          placeholder="Digite o titulo"
+          [(ngModel)]="task.titulo"
+        />
+      </div>
+      <div class="form-group">
+          <label for="description">Descrição:</label>
+          <input
+          type="textarea"
+          class="input descricao"
+          name="titulo"
+          placeholder="Digite a descrição"
+          [(ngModel)]="task.descricao"
+        />
+      </div>
+      <div class="date-group">
+          <div class="form-group">
+              <label for="start-date">Data Início:</label>
+              <input type="date" id="start-date" name="start-date">
+          </div>
+          <div class="form-group">
+              <label for="end-date">Data Fim:</label>
+              <input type="date" id="end-date" name="end-date">
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="group">Grupo:</label>
+          <select id="group" name="group">
+              <option *ngFor="let grupo of grupos" [value]="grupo.id">{{ grupo.nome }}</option>
+          </select>
+      </div>
+
+      <div class="status-container">
+
+        <div class="radio-modelo">
+          <label for="status1">
+            <input
+            type="radio"
+            id="status1"
+            value="status1"
+            name="modelo-card"
+            [(ngModel)]="task.status"
+
+            />
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Em andamento</span>
+          </label>
+
+        </div>
+
+        <div class="radio-modelo">
+          <label for="status2">
+            <input
+            type="radio"
+            id="status2"
+            value="status2"
+            name="modelo-card"
+            [(ngModel)]="task.status"
+
+            />
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Finalizado</span>
+          </label>
+        </div>
+
+        <div class="radio-modelo">
+          <label for="status3">
+            <input
+            type="radio"
+            id="status3"
+            value="status3"
+            name="modelo-card"
+            [(ngModel)]="task.status"
+
+            />
+            <div class="custom-radio">
+              <span></span>
+            </div>
+            <span>Para fazer</span>
+          </label>
+
+        </div>
+
+    </div>
+
+
+      <div class="button-group">
+          <button type="submit" (click)="criarTask()" class="save-button">Salvar</button>
+          <button type="button" (click)="cancelar()" class="cancel-button">Cancelar</button>
+      </div>
+
+  </form>
+</div>

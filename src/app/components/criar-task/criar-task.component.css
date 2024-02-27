@@ -1,0 +1,123 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.activity-form h2{
+  color: #fff;
+}
+
+.activity-form {
+  background-color: #93BBFF;
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+  width: 400px; /* Defina a largura desejada */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px; /* Defina a altura desejada */
+  resize: none; /* Impede que o usuário redimensione */
+}
+
+.date-group {
+  display: flex;
+}
+
+.date-group .form-group {
+  width: 50%;
+  margin-right: 10px;
+}
+
+.button-group {
+  text-align: center;
+}
+
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: #1E90FF; /* Azul mais escuro */
+  color: #fff;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #000;
+}
+
+
+.modelos {
+  display: flex;
+  gap: 2.5rem;
+  border: 1px solid red;
+}
+
+.modelo {
+  background-color: #F8F9FE;
+  padding: 1rem;
+  max-width: 250px;
+  margin: 1rem 0 2rem;
+}
+
+.modelo .conteudo {
+  margin: 1rem auto;
+  word-wrap: break-word;
+}
+
+.modelo .autoria {
+  word-wrap: break-word;
+}
+
+
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  margin-bottom: 15px;
+}
+
+.radio-modelo label {
+  color: white; /* Cor do texto da label */
+  margin-left: 8px; /* Espaço entre o input radio e a label */
+  display: flex;
+}
+
+.custom-button {
+  background-color: #1E90FF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
